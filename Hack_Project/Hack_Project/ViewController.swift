@@ -13,13 +13,13 @@ class ViewController: UIViewController {
     private let button: UIButton = {
         let button = UIButton()
         button.setTitle("Log in", for: .normal)
-        button.backgroundColor = .white
-        button.setTitleColor(.black, for: .normal)
+        button.backgroundColor = .blue
+        button.setTitleColor(.white, for: .normal)
         return button
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBlue
+        view.backgroundColor = .systemBackground
         
 //        self.navigationController?.navigationBar.barTintColor = .clear
 //        self.hideNavigationBar()
@@ -46,7 +46,27 @@ class ViewController: UIViewController {
     
     @objc
     private func didTabButton() {
+        let tabBarVC = UITabBarController()
         
+        let vc1 = FinancialAppsViewController()
+        let vc2 = MainViewController()
+        let vc3 = ChatViewController()
+        let vc4 = ProfileViewController()
+        
+        tabBarVC.setViewControllers([vc1, vc2, vc3, vc4], animated: false)
+        
+        guard let items = tabBarVC.tabBar.items else {
+            return
+        }
+        
+        let icons = ["square.grid.2x2.fill","house.fill","bubble.right.fill","person.fill"]
+        
+        for x in 0..<items.count{
+            items[x].image = UIImage(systemName: icons[x])
+        }
+        
+        tabBarVC.modalPresentationStyle = .fullScreen
+        present(tabBarVC, animated: false)
     }
     
 }

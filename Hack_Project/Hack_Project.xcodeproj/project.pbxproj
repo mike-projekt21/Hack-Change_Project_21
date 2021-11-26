@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		281780AB275165510002BA0A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281780AA275165510002BA0A /* UIColorExtension.swift */; };
 		281780AE275165860002BA0A /* AnotherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281780AD275165860002BA0A /* AnotherExtension.swift */; };
+		281780B327517C770002BA0A /* FinancialAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281780B227517C770002BA0A /* FinancialAppsViewController.swift */; };
+		281780BB27517D910002BA0A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281780BA27517D910002BA0A /* MainViewController.swift */; };
+		281780BE27517DDB0002BA0A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281780BD27517DDB0002BA0A /* ChatViewController.swift */; };
+		281780C127517E030002BA0A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281780C027517E030002BA0A /* ProfileViewController.swift */; };
 		288ED4012750EE290005E8E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288ED4002750EE290005E8E3 /* AppDelegate.swift */; };
 		288ED4032750EE290005E8E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288ED4022750EE290005E8E3 /* SceneDelegate.swift */; };
 		288ED4052750EE290005E8E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288ED4042750EE290005E8E3 /* ViewController.swift */; };
@@ -22,6 +26,10 @@
 		0A3D2E9F08B8F7C97C738CFE /* Pods-Hack_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack_Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hack_Project/Pods-Hack_Project.release.xcconfig"; sourceTree = "<group>"; };
 		281780AA275165510002BA0A /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		281780AD275165860002BA0A /* AnotherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherExtension.swift; sourceTree = "<group>"; };
+		281780B227517C770002BA0A /* FinancialAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialAppsViewController.swift; sourceTree = "<group>"; };
+		281780BA27517D910002BA0A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		281780BD27517DDB0002BA0A /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		281780C027517E030002BA0A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		288ED3FD2750EE290005E8E3 /* Hack_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hack_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288ED4002750EE290005E8E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		288ED4022750EE290005E8E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +62,6 @@
 				281780AA275165510002BA0A /* UIColorExtension.swift */,
 				281780AD275165860002BA0A /* AnotherExtension.swift */,
 				288ED40B2750EE340005E8E3 /* LaunchScreen.storyboard */,
-				288ED40E2750EE340005E8E3 /* Info.plist */,
 			);
 			path = "Other Files";
 			sourceTree = "<group>";
@@ -73,6 +80,38 @@
 				288ED4022750EE290005E8E3 /* SceneDelegate.swift */,
 			);
 			path = "System Files";
+			sourceTree = "<group>";
+		};
+		281780B627517D1B0002BA0A /* FinancialAppsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				281780B227517C770002BA0A /* FinancialAppsViewController.swift */,
+			);
+			path = FinancialAppsScreen;
+			sourceTree = "<group>";
+		};
+		281780B727517D370002BA0A /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				281780BA27517D910002BA0A /* MainViewController.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		281780B827517D4D0002BA0A /* ChatScreen */ = {
+			isa = PBXGroup;
+			children = (
+				281780BD27517DDB0002BA0A /* ChatViewController.swift */,
+			);
+			path = ChatScreen;
+			sourceTree = "<group>";
+		};
+		281780B927517D5D0002BA0A /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				281780C027517E030002BA0A /* ProfileViewController.swift */,
+			);
+			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
 		288ED3F42750EE280005E8E3 = {
@@ -96,10 +135,15 @@
 		288ED3FF2750EE290005E8E3 /* Hack_Project */ = {
 			isa = PBXGroup;
 			children = (
+				281780B927517D5D0002BA0A /* ProfileScreen */,
+				281780B827517D4D0002BA0A /* ChatScreen */,
+				281780B727517D370002BA0A /* MainScreen */,
+				281780B627517D1B0002BA0A /* FinancialAppsScreen */,
 				281780B0275165FE0002BA0A /* System Files */,
 				281780A8275164970002BA0A /* Other Files */,
 				288ED4042750EE290005E8E3 /* ViewController.swift */,
 				288ED4062750EE290005E8E3 /* Main.storyboard */,
+				288ED40E2750EE340005E8E3 /* Info.plist */,
 			);
 			path = Hack_Project;
 			sourceTree = "<group>";
@@ -232,9 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				281780BB27517D910002BA0A /* MainViewController.swift in Sources */,
 				288ED4052750EE290005E8E3 /* ViewController.swift in Sources */,
+				281780BE27517DDB0002BA0A /* ChatViewController.swift in Sources */,
 				288ED4012750EE290005E8E3 /* AppDelegate.swift in Sources */,
+				281780B327517C770002BA0A /* FinancialAppsViewController.swift in Sources */,
 				281780AE275165860002BA0A /* AnotherExtension.swift in Sources */,
+				281780C127517E030002BA0A /* ProfileViewController.swift in Sources */,
 				288ED4032750EE290005E8E3 /* SceneDelegate.swift in Sources */,
 				281780AB275165510002BA0A /* UIColorExtension.swift in Sources */,
 			);
