@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		281780AB275165510002BA0A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281780AA275165510002BA0A /* UIColorExtension.swift */; };
+		281780AE275165860002BA0A /* AnotherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281780AD275165860002BA0A /* AnotherExtension.swift */; };
 		288ED4012750EE290005E8E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288ED4002750EE290005E8E3 /* AppDelegate.swift */; };
 		288ED4032750EE290005E8E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288ED4022750EE290005E8E3 /* SceneDelegate.swift */; };
 		288ED4052750EE290005E8E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288ED4042750EE290005E8E3 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		0A3D2E9F08B8F7C97C738CFE /* Pods-Hack_Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hack_Project.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hack_Project/Pods-Hack_Project.release.xcconfig"; sourceTree = "<group>"; };
+		281780AA275165510002BA0A /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		281780AD275165860002BA0A /* AnotherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherExtension.swift; sourceTree = "<group>"; };
 		288ED3FD2750EE290005E8E3 /* Hack_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hack_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288ED4002750EE290005E8E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		288ED4022750EE290005E8E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +46,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281780A8275164970002BA0A /* Other Files */ = {
+			isa = PBXGroup;
+			children = (
+				281780A9275164CF0002BA0A /* Fonts */,
+				288ED4092750EE340005E8E3 /* Assets.xcassets */,
+				281780AA275165510002BA0A /* UIColorExtension.swift */,
+				281780AD275165860002BA0A /* AnotherExtension.swift */,
+				288ED40B2750EE340005E8E3 /* LaunchScreen.storyboard */,
+				288ED40E2750EE340005E8E3 /* Info.plist */,
+			);
+			path = "Other Files";
+			sourceTree = "<group>";
+		};
+		281780A9275164CF0002BA0A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		281780B0275165FE0002BA0A /* System Files */ = {
+			isa = PBXGroup;
+			children = (
+				288ED4002750EE290005E8E3 /* AppDelegate.swift */,
+				288ED4022750EE290005E8E3 /* SceneDelegate.swift */,
+			);
+			path = "System Files";
+			sourceTree = "<group>";
+		};
 		288ED3F42750EE280005E8E3 = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +96,10 @@
 		288ED3FF2750EE290005E8E3 /* Hack_Project */ = {
 			isa = PBXGroup;
 			children = (
-				288ED4002750EE290005E8E3 /* AppDelegate.swift */,
-				288ED4022750EE290005E8E3 /* SceneDelegate.swift */,
+				281780B0275165FE0002BA0A /* System Files */,
+				281780A8275164970002BA0A /* Other Files */,
 				288ED4042750EE290005E8E3 /* ViewController.swift */,
 				288ED4062750EE290005E8E3 /* Main.storyboard */,
-				288ED4092750EE340005E8E3 /* Assets.xcassets */,
-				288ED40B2750EE340005E8E3 /* LaunchScreen.storyboard */,
-				288ED40E2750EE340005E8E3 /* Info.plist */,
 			);
 			path = Hack_Project;
 			sourceTree = "<group>";
@@ -204,7 +234,9 @@
 			files = (
 				288ED4052750EE290005E8E3 /* ViewController.swift in Sources */,
 				288ED4012750EE290005E8E3 /* AppDelegate.swift in Sources */,
+				281780AE275165860002BA0A /* AnotherExtension.swift in Sources */,
 				288ED4032750EE290005E8E3 /* SceneDelegate.swift in Sources */,
+				281780AB275165510002BA0A /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
